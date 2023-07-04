@@ -1,0 +1,125 @@
+/* GLOBAL ADJUSTMENTS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* NUMERIC ADJUSTMENT */
+:root {
+    font-size: 62.5%;
+}
+
+/* BODY SETUP */
+body {
+    background-image: url(./assets/fundo.svg);
+    background-repeat:repeat-x;
+}
+
+/* LIST OF HOLES SETUP */
+.holes {
+    display: grid;
+    gap: 5.4rem;
+    grid-template-areas:
+    "A B C D"
+    "E F G H"
+    "I J K L";
+    
+    margin: 22.5rem 24.5rem 18.7rem 18.8rem;
+
+    width: 90%;
+    position: relative;
+
+    list-style: none;
+    z-index: 0;
+}
+
+/* HOLE SETUP */
+.hole {
+    background-image: url(./assets/toupeira6.svg);
+    width: 22.2rem;
+    height: 17.2rem;
+}
+
+/* ANIMATION PER HOLE SETUP */
+.holes div {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: var(1 + 2s);
+}
+
+/* BELOW ARE ANIMATION DELAYS FOR EACH HOLE */
+.holes .hole:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.holes .hole:nth-child(2) {
+    animation-delay: 18s;
+}
+
+.holes .hole:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.holes .hole:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.holes .hole:nth-child(5) {
+    animation-delay: 6s;
+}
+
+.holes .hole:nth-child(6) {
+    animation-delay: 14s;
+}
+
+.holes .hole:nth-child(7) {
+    animation-delay: 24s;
+}
+
+.holes .hole:nth-child(8) {
+    animation-delay: 22s;
+}
+
+.holes .hole:nth-child(9) {
+    animation-delay: 12s;
+}
+
+.holes .hole:nth-child(10) {
+    animation-delay: 20s;
+}
+
+.holes .hole:nth-child(11) {
+    animation-delay: 8s;
+}
+
+.holes .hole:nth-child(12) {
+    animation-delay: 16s;
+}
+
+/* ANIMATIONS */
+@keyframes fade-in {
+    0% {
+       background-image: url(./assets/toupeira1.svg);
+    }
+
+    20% {
+        background-image: url(./assets/toupeira2.svg);
+    }
+
+    30%, 50% {
+        background-image: url(./assets/toupeira3.svg);
+    }
+
+    60% {
+        background-image: url(./assets/toupeira4.svg);
+    }
+
+    80% {
+        background-image: url(./assets/toupeira5.svg);
+    }
+
+    100% {
+        background-image: url(./assets/toupeira6.svg);
+    }
+}
